@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+ overflow-x: hidden;
+}
+
+.app_container{
+  width: 100vw;
+  min-height: 100vh;
+}

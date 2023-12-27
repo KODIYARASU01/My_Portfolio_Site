@@ -1,0 +1,104 @@
+.textimonial_container {
+  width: 100vw;
+  min-height: 70vh;
+  margin: 2rem auto;
+  position: relative;
+
+  .testimonial_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    h2 {
+      font-weight: 600;
+      font-size: 2rem;
+
+      @media (max-width: 700px) {
+        font-size: 1.2rem;
+        font-weight: 550;
+      }
+    }
+    small {
+      font-size: 14px;
+      color: gray;
+    }
+  }
+  .textimonial_card {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+
+    .details {
+      width: 100%;
+      padding: 1rem 2rem;
+
+      .name {
+        img {
+          margin: 10px auto;
+          display: flex;
+          justify-content: center;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          align-items: center;
+        }
+        h5 {
+          color: #5c5c5c;
+          padding: 10px 0px;
+          font-size: 1.5rem;
+        }
+      }
+      .content {
+        padding: 9px 0.6rem;
+      }
+      .channel_name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        gap: 10px;
+
+        small {
+          color: #5e5cdd;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+              color: rgb(38, 38, 39);
+              font-size: 1.8rem;
+
+              &:hover {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1000px) {
+      width: initial;
+      margin: 1rem auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin: 1rem auto;
+    max-height: 65vh;
+  }
+}

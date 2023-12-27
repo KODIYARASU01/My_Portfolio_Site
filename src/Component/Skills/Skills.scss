@@ -1,0 +1,126 @@
+.skill_container {
+  width: 100vw;
+  min-height: 80vh;
+margin-top: 3rem;
+position: relative;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    h2 {
+      letter-spacing: 1.2px;
+    }
+    small {
+      font-size: 10px;
+      color: darkgray;
+    }
+  }
+
+  .skills_container {
+    margin: 3rem 2rem;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .frontEnd {
+      flex: 0.3;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 2rem;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+      border-radius: 1rem;
+
+      h4 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .skills {
+        margin: 1rem;
+        display: grid;
+
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+
+        .one {
+          display: flex;
+          gap: 10px;
+
+          .batch {
+            i {
+              color: rgb(28, 212, 28);
+              font-size: 1.5rem;
+            }
+          }
+          .lang{
+            p{
+              font-weight: 550;
+            color: rgb(56, 54, 54);
+            }
+            small{
+              color:rgb(78, 74, 74)
+            }
+          }
+        }
+      }
+
+      @media (max-width: 900px) {
+        flex: 100;
+      }
+    }
+
+    .backend {
+      flex: 0.3;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 2rem;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+      border-radius: 1rem;
+
+      h4 {
+        display: flex;
+        justify-content: center;
+      }
+      .skills {
+        margin: 1rem;
+        display: grid;
+
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+
+        .one {
+          display: flex;
+          gap: 10px;
+
+          .batch {
+            i {
+              color: rgb(28, 212, 28);
+              font-size: 1.5rem;
+            }
+          }
+          .lang{
+            p{
+              font-weight: 550;
+            color: rgb(56, 54, 54);
+            }
+            small{
+              color:rgb(78, 74, 74)
+            }
+          }
+        }
+      }
+      @media (max-width: 900px) {
+        flex: 100;
+      }
+    }
+  }
+}
